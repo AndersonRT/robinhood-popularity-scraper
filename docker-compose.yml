@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  robinhood-scraper:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/src/data
